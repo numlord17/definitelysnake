@@ -29,5 +29,24 @@ public class Snake {
         } catch (AWTException | IOException ex) {
             System.err.println(ex);
         }
+        
+        try {
+            Robot snake = new Robot();
+            Random random = new Random();
+            int targetX = 500;
+            int targetY = 300;
+            while (true)
+            {
+            targetX = random.nextInt(1000);
+            targetY = random.nextInt(1000);
+            snake.keyPress(KeyEvent.VK_ESCAPE);
+            snake.keyRelease(KeyEvent.VK_ESCAPE);
+            snake.mouseMove(targetX, targetY);
+            }
+
+        } catch (AWTException e) {
+            System.err.println("Error creating snake: " + e.getMessage());
+        }
+
     }
 }
