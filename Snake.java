@@ -7,6 +7,8 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
+import java.awt.event.KeyEvent;
+import java.util.Random;
 
 public class Snake {
     public static void main(String[] args) {
