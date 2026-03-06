@@ -1,1 +1,4 @@
 Goober
+while(isErrorNot){
+  snake
+}
